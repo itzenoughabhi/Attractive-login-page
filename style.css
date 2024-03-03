@@ -1,0 +1,83 @@
+body{
+ 
+ font-size: 16px;
+ font-family:Arial, Helvetica, sans-serif;
+ background-color: #010c0c;
+}
+div.rotate{
+  background-repeat: no-repeat;
+  background-image: url(eyes.jpg);
+  animation: ff 1s linear infinite;
+}
+@keyframes ff{
+  100%{
+    filter: hue-rotate(360deg);
+  }
+  
+}
+.container{
+  color: rgb(236, 229, 229);
+  width: 390px;
+}
+h1{
+  text-align: center;
+}
+div.container{ 
+  height: 300px;
+  width: 550px;
+  position: absolute;
+  left: 515px;
+ top: 220px;
+ transform: translate(-50%,-50%);
+  align-items: center;
+  backdrop-filter: blur(4px);
+ border-radius: 20px;
+  box-shadow: 7px  7px 60px rgba(0, 0, 255, 0.295), -7px -7px 60px rgba(0, 0, 255, 0.212);
+  
+}
+div p{
+  justify-content: center;
+  text-align: center;
+}
+p{
+  padding: 5px;
+}
+p a{
+  text-decoration: none;
+  color: #00a9ff;
+}
+ a:hover{
+  color: rgb(13, 239, 13);
+  font-size: 19px;
+}
+.login{
+  padding-left: 80px;
+  padding-top: 20px;
+
+}
+label{
+    position: relative;
+    left: -170px;
+    top: 17px;
+}
+input{
+  position: absolute;
+  margin: 10px;
+  height: 20px;
+  width: 240px;
+  left: 200px;
+  cursor: pointer;
+color:black;
+color: var(--black-color);
+
+
+}
+p>input#submit{
+  background-color:#89cff3;
+  height: 29px;
+font-size: 19px;
+}
+p>input#submit:hover{
+  background-color:#00a9ff;
+  font-size: 22px;
+}
